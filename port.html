@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #161b22;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #58a6ff;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background-color: #161b22;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .hero .buttons {
+            margin-top: 20px;
+        }
+
+        .hero button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #58a6ff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 50px;
+        }
+
+        .about, .skills, .contact {
+            margin: auto;
+            max-width: 900px;
+        }
+
+        .about img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: auto;
+            display: block;
+        }
+
+        .skills .bars div {
+            margin-bottom: 10px;
+        }
+
+        .skills .bars div span {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .skills .bars div .progress {
+            height: 8px;
+            background-color: #1f6feb;
+            border-radius: 5px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #30363d;
+            border-radius: 5px;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            resize: none;
+        }
+
+        .contact form textarea {
+            height: 100px;
+        }
+
+        .contact form .form-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #58a6ff;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #1f6feb;
+        }
+
+        .contact form .social-icons {
+            display:table-row;
+            gap: 10px;
+        }
+
+        .contact form .social-icons .icon {
+            width: 40px;
+            height: 80px;
+            display:inline;
+            align-items: center;
+            justify-content: center;
+            border: 6px solid #0a0a0a;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact form .social-icons .icon:hover {
+            background-color: #58a6ff;
+            transform: scale(1.1);
+        }
+
+        .contact form .social-icons .icon img {
+            width: 20px;
+            height: 20px;
+            align-items: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #161b22;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Youssef.</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Hi, I&#39;m Youssef Fahim</h1>
+    <p>I'm a developpor web</p>
+    <div class="buttons">
+        <button>Hire Me</button>
+        <button>Let&#39;s Talk</button>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <img src="YOUSSEF.jpg" alt="Profile Photo">
+    <p>I'm a student in Computer Science and Engineering, passionate about coding and problem-solving. I'm always looking for new challenges and opportunities to learn and grow.</p>
+            <p>I'm proficient in a range of programming languages, including Java, Python, and C++. I'm also familiar with web development frameworks such as React and Angular.</p>
+            <p>In my free time, I enjoy reading about the latest developments in tech and working on personal projects.</p>
+</section>
+
+<section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="bars">
+        <div>
+            <span>HTML</span>
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+        <div>
+            <span>CSS</span>
+            <div class="progress" style="width: 80%;"></div>
+        </div>
+        <div>
+            <span>c && c++</span>
+            <div class="progress" style="width: 70%;"></div>
+        </div>
+        <div>
+            <span>Python</span>
+            <div class="progress" style="width: 60%;"></div>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="07ae9515-8594-471b-b07b-f5448d392ee2">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">phone number</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="bdate">bithdate:</label>
+        <input type="date" id="bdate" name="bdate" required>
+        <div>
+            <label for="title">genre:</label>
+
+            <label>Mr.</label>
+            <input type="radio" id="mr" name="gender" value="Mr">
+
+            <label>Ms.</label>
+            <input type="radio" id="ms" name="gender" value="Ms">
+
+        </div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <div class="form-footer">
+            <button type="submit">Submit</button>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/youssef-fahim-ab6bbb339/" class="icon"><img src="linkdin.png" alt="LinkedIn"></a>
+                <a href="https://github.com/FAHIMyoussef05" class="icon"><img src="git.png" alt="GitHub"></a>
+                <a href="" class="icon"><img src="image.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/fahim__youssef/?__pwa=1" class="icon"><img src="insta.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </form>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</section>
+
+<footer>
+    &copy; 2024 Youssef Fahim. All Rights Reserved.
+</footer>
+
+</body>
+</html>
